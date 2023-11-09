@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Basketball Score</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <div class="team-player">
+                    <h3>HOME</h3>
+                </div>
+                <div class="score" id="score-left"></div>
+                <div class="group-plus-number">
+                    <h4 class=plus-number onclick="updateScore('left', 1)">+1</h4>
+                    <h4 class=plus-number onclick="updateScore('left', 2)">+2</h4>
+                    <h4 class=plus-number onclick="updateScore('left', 3)">+3</h4>
+                </div>
+            </div>
+            <div>
+                <div class="team-player">
+                    <h3>GUEST</h3>
+                </div>
+                <div class="score" id="score-right"></div>
+                <div class="group-plus-number">
+                    <h4 class=plus-number onclick="updateScore('right', 1)">+1</h4>
+                    <h4 class=plus-number onclick="updateScore('right', 2)">+2</h4>
+                    <h4 class=plus-number onclick="updateScore('right', 3)">+3</h4>
+                </div>
+            </div>
+        </div>
+            <div>
+                <button class="reset-btn" onclick="resetScore()">Reset</button>
+            </div>
+        <script src="index.js"></script>
+    </body>
+</html>
